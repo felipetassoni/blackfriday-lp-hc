@@ -26,15 +26,16 @@ body {
 
 /* ------------------------------ Header ------------------------------ */
 
+header {
+	width: 100%;
+}
+
 /* --- Nav --- */
 header > nav {
+	width: 100%;
 	display: flex;
 	margin-top: 2rem;
 	align-items: center;
-}
-
-header > nav > svg {
-	color: var(--partners-social-color);
 }
 
 header > nav > h2 {
@@ -61,7 +62,6 @@ main {
 	justify-content: center;
 	align-items: center;
 	margin-top: 6rem;
-	width: 80%;
 	/*background-color: var(--background-box-color);*/
 	border-radius: 0.8rem;
 	padding: 2rem 0;
@@ -106,7 +106,6 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
 	height: 180px;
 	background-color: var(--background-box-color);
 	border-radius: 0.4rem;
@@ -330,4 +329,88 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/* ------------------------------ Media-Queries ------------------------------ */
+
+@media (max-width: 1300px) {
+	/* --- Products Section --- */
+	#products-section {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 4rem;
+	}
+
+	.product-info {
+		width: 80%;
+		margin-top: 2rem;
+	}
+}
+
+@media (max-width: 1000px) {
+	/* --- Clock Section --- */
+	#clock-section {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.clock-box {
+		min-width: 0;
+		width: 8rem;
+		height: 8rem;
+	}
+
+	.clock-box h2 {
+		font-size: 4rem;
+	}
+
+	.clock-box h4 {
+		font-size: 1.5rem;
+	}
+
+	/* --- Advantages Section --- */
+	#advantages-section {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	/* --- Partners Section --- */
+
+	#partners-section {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#partners-title {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width: 900px) {
+	#bf-title {
+		font-size: 4rem;
+		text-align: center;
+	}
+
+	#bf-subtitle {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	/* --- Partners Section --- */
+	#partners {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.partner object {
+		width: 15rem;
+		height: 15rem;
+	}
 }
