@@ -1,0 +1,332 @@
+* {
+	font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+	vertical-align: baseline;
+	list-style: none;
+	border: 0;
+}
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-size: 10px;
+}
+
+:root {
+	--background-color: #040305;
+	--background-box-color: #1b1b1b;
+	--partners-social-color: #a6a3a4;
+	--logo-text-color: #ff4e57;
+	--text-color: #f0f0f0;
+	--text-color2: #ff979c;
+}
+
+/* ------------------------------ Header ------------------------------ */
+
+/* --- Nav --- */
+header > nav {
+	display: flex;
+	margin-top: 3rem;
+	align-items: center;
+}
+
+header > nav > svg {
+	color: var(--partners-social-color);
+}
+
+header > nav > h2 {
+	font-size: 2rem;
+	margin-left: 1rem;
+	color: var(--text-color);
+	font-weight: 500;
+}
+
+/* ------------------------------ Main ------------------------------ */
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* --- Black Friday Section --- */
+
+#black-friday-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 6rem;
+	width: 80%;
+	/*background-color: var(--background-box-color);*/
+	border-radius: 0.8rem;
+	padding: 2rem 0;
+}
+
+#bf-title {
+	font-size: 6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#bf-red-title {
+	color: var(--logo-text-color);
+}
+
+#bf-subtitle {
+	width: 60%;
+	margin-top: 2rem;
+}
+
+#bf-subtitle p {
+	font-size: 1.7rem;
+	text-align: center;
+}
+
+/* --- Clock Section --- */
+
+#clock-section {
+	width: 90%;
+	margin-top: 6rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.clock-box {
+	min-width: 200px;
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 180px;
+	background-color: var(--background-box-color);
+	border-radius: 0.4rem;
+}
+
+.clock-box h2 {
+	font-size: 5rem;
+	color: var(--logo-text-color);
+}
+
+.clock-box h4 {
+	font-size: 2rem;
+	color: var(--partners-social-color);
+}
+
+/* --- Input Section --- */
+
+#input-section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 6rem;
+}
+
+#input-section input {
+	width: 30rem;
+	height: 2rem;
+	background-color: var(--background-box-color);
+	outline: none;
+	font-size: 1.3rem;
+	color: var(--text-color);
+	padding: 1rem;
+	margin-right: 1rem;
+}
+
+#input-section button {
+	background-color: var(--logo-text-color);
+	color: var(--text-color);
+	font-weight: 700;
+	width: 8rem;
+	height: 4rem;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	font-size: 1.2rem;
+	transition: 0.4s;
+}
+
+#input-section button:hover {
+	background-color: var(--text-color);
+	color: var(--logo-text-color);
+}
+
+/* --- Products Section --- */
+
+#products-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 6rem;
+}
+
+.product-info {
+	width: 20rem;
+	padding: 2rem;
+	height: auto;
+	background-color: var(--background-box-color);
+	border-radius: 0.4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-info h2 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	color: var(--text-color2);
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+.product-info p {
+	font-size: 2rem;
+	color: var(--logo-text-color);
+	font-weight: 500;
+	margin-top: 1rem;
+}
+
+.product-info ul li {
+	font-size: 1.2rem;
+	text-align: center;
+	margin-top: 1rem;
+	color: var(--partners-social-color);
+}
+
+.product-info button {
+	background-color: var(--logo-text-color);
+	color: var(--text-color);
+	margin-top: 1rem;
+	font-weight: 700;
+	width: 100%;
+	height: 3rem;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	font-size: 1.2rem;
+	transition: 0.4s;
+}
+
+.product-info button:hover {
+	background-color: var(--text-color);
+	color: var(--logo-text-color);
+}
+
+/* --- Advantages Section --- */
+
+#advantages-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 6rem;
+}
+
+.advantage-info {
+	width: 20rem;
+	padding: 2rem;
+	height: auto;
+	max-height: 15rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+}
+
+.advantage-info:hover {
+	background-color: var(--background-box-color);
+	border-radius: 0.4rem;
+}
+
+.advantage-info object {
+	width: 6rem;
+}
+
+.advantage-info h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.advantage-info p {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	text-align: center;
+	color: var(--partners-social-color);
+}
+
+/* --- Partners Section --- */
+
+#partners-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 6rem;
+}
+
+#partners-title {
+	width: 30%;
+}
+
+#partners-title h2 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+#partners-title p {
+	font-size: 1.2rem;
+	color: var(--partners-social-color);
+	margin-top: 1rem;
+	text-align: center;
+}
+
+#partners {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+.partner object {
+	width: 10rem;
+	height: 10rem;
+}
+
+.partner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ------------------------------ Footer ------------------------------ */
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 6rem;
+}
+
+#footer-author {
+	font-size: 1.5rem;
+	color: var(--partners-social-color);
+}
+
+#social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
