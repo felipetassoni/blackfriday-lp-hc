@@ -29,7 +29,7 @@ body {
 /* --- Nav --- */
 header > nav {
 	display: flex;
-	margin-top: 3rem;
+	margin-top: 2rem;
 	align-items: center;
 }
 
@@ -318,6 +318,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 6rem;
+	margin-bottom: 2rem;
 }
 
 #footer-author {
