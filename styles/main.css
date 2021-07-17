@@ -401,6 +401,40 @@ footer {
 }
 
 @media (max-width: 600px) {
+	/* --- Clock Section --- */
+	#clock-section {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.clock-box {
+		min-width: 0;
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.clock-box h2 {
+		font-size: 2.5rem;
+	}
+
+	.clock-box h4 {
+		font-size: 1rem;
+	}
+
+	/* --- Input Section --- */
+	#input-section {
+		flex-direction: column;
+	}
+
+	#input-section input {
+		width: 100%;
+	}
+
+	#input-section button {
+		margin-top: 1rem;
+		width: 100%;
+	}
+
 	/* --- Partners Section --- */
 	#partners {
 		display: flex;
